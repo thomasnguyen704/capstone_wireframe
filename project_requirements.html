@@ -34,24 +34,23 @@
 		<article>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-4 left">
 						<!-- Select to open and read a project -->
-						<form>
+						<form class="form-inline">
 							<div class="form-group">
-								<label for="selectProjects">Choose Project</label>
-								<select class="form-control" id="selectProjects">
+								<select class="form-control mr-sm-2" id="selectProjects">
+									<option disabled selected>Choose Project</option>
 									<option>Project 1</option>
 									<option>Project 2</option>
 									<option>Project 3</option>
 									<option>Project 4</option>
 									<option>Project 5</option>
 								</select>
-								<small>The projects listed are only those that are active.</small>
 							</div>
 							<button class="btn btn-primary" type="submit">OK</button>
 						</form>
 					</div>
-					<div class="col-lg-8">
+					<div class="col-lg-8 right">
 						<!-- Update and read existing project information -->
 						<form>
 							<fieldset disabled>
@@ -87,8 +86,8 @@
 								<button type="button" class="btn btn-primary">Save</button>
 								<button type="button" class="btn btn-danger">Cancel</button>
 							</fieldset>
-						</br>
 						</form>
+						
 						<!-- create project modal -->
 						<p>Click <a href="#" data-toggle="modal" data-target="#createProject">here</a> to create a new project </p> <!-- trigger modal -->
 						<div class="modal" id="createProject" tabindex="-1" role="dialog">
